@@ -1,0 +1,161 @@
+.app {
+  min-height: 100vh;
+  padding: 32px 16px;
+  background: #f4f7fb;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.post-manager {
+  max-width: 800px;
+  margin: auto;
+  padding: 32px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.1);
+}
+
+header p,
+small,
+.empty-state {
+  color: #64748b;
+}
+
+.post-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+label {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.platform-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.platform {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #172033;
+  text-align: left;
+}
+
+.platform span {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.platform.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.form-actions,
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary-button {
+  background: #64748b;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 8px;
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.post-list {
+  margin-top: 32px;
+}
+
+.post-card {
+  margin-top: 14px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.post-card h3 {
+  margin-top: 0;
+}
+
+.post-card p {
+  white-space: pre-wrap;
+}
+
+.post-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.post-platforms span {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: #e0e7ff;
+  color: #3730a3;
+  font-size: 0.8rem;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+@media (max-width: 560px) {
+  .post-manager {
+    padding: 22px;
+  }
+
+  .platform-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions,
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button,
+  .card-actions button {
+    width: 100%;
+  }
+}
